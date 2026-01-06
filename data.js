@@ -1,0 +1,58 @@
+const books = [
+  { id: 1, titleEn: 'Carrie', titleDe: 'Carrie', year: 1974 },
+  { id: 2, titleEn: 'The Shining', titleDe: 'The Shining', year: 1977 },
+  { id: 3, titleEn: '"The Stand"', titleDe: 'The Stand', year: 1978 },
+  { id: 4, titleEn: 'The Dead Zone', titleDe: 'The Dead Zone', year: 1979 },
+  { id: 5, titleEn: 'Firestarter', titleDe: 'Firestarter', year: 1980 },
+  { id: 6, titleEn: 'Cujo', titleDe: 'Cujo', year: 1981 },
+  { id: 7, titleEn: 'Christine', titleDe: 'Christine', year: 1983 },
+  { id: 8, titleEn: 'Pet Sematary', titleDe: 'Pet Sematary', year: 1983 },
+  { id: 9, titleEn: 'The Talisman', titleDe: 'The Talisman', year: 1984 },
+  { id: 10, titleEn: 'It', titleDe: 'It', year: 1986 },
+  { id: 11, titleEn: 'Misery', titleDe: 'Misery', year: 1987 },
+  { id: 12, titleEn: 'The Tommyknockers', titleDe: 'The Tommyknockers', year: 1987 },
+  { id: 13, titleEn: 'The Stand: The Complete & Uncut Edition', titleDe: 'The Stand: The Complete & Uncut Edition', year: 1990 },
+  { id: 14, titleEn: 'Four Past Midnight', titleDe: 'Four Past Midnight', year: 1990 },
+  { id: 15, titleEn: 'The Green Mile', titleDe: 'The Green Mile', year: 1996 },
+  { id: 16, titleEn: 'The Girl Who Loved Tom Gordon', titleDe: 'The Girl Who Loved Tom Gordon', year: 1999 },
+  { id: 17, titleEn: 'Bag of Bones', titleDe: 'Bag of Bones', year: 1998 },
+  { id: 18, titleEn: 'The Shining (Sober)', titleDe: 'The Shining (Nüchtern)', year: 1980 },
+  { id: 19, titleEn: 'The Running Man', titleDe: 'The Running Man', year: 1982 },
+  { id: 20, titleEn: 'Insomnia', titleDe: 'Insomnia', year: 1994 },
+  { id: 21, titleEn: 'Rose Madder', titleDe: 'Rose Madder', year: 1995 },
+  { id: 22, titleEn: 'Gerald\'s Game', titleDe: 'Gerald\'s Game', year: 1992 },
+  { id: 23, titleEn: 'Needful Things', titleDe: 'Needful Things', year: 1991 },
+  { id: 24, titleEn: 'The Waste Lands', titleDe: 'The Waste Lands', year: 1991 },
+  { id: 25, titleEn: 'Wizard and Glass', titleDe: 'Wizard and Glass', year: 1997 },
+  { id: 26, titleEn: 'Wolves of the Calla', titleDe: 'Wolves of the Calla', year: 2003 },
+  { id: 27, titleEn: 'Song of Susannah', titleDe: 'Song of Susannah', year: 2004 },
+  { id: 28, titleEn: 'The Dark Tower', titleDe: 'The Dark Tower', year: 2004 },
+  { id: 29, titleEn: 'The Wind Through the Keyhole', titleDe: 'The Wind Through the Keyhole', year: 2012 },
+  { id: 30, titleEn: 'Under the Dome', titleDe: 'Under the Dome', year: 2009 },
+  { id: 31, titleEn: '11/22/63', titleDe: '11/22/63', year: 2011 },
+  { id: 32, titleEn: 'A Happy Marriage', titleDe: 'A Happy Marriage', year: 2012 },
+  { id: 33, titleEn: 'Doctor Sleep', titleDe: 'Doctor Sleep', year: 2013 },
+  { id: 34, titleEn: 'The Gypsy Bride', titleDe: 'The Gypsy Bride', year: 2014 },
+  { id: 35, titleEn: 'Revival', titleDe: 'Revival', year: 2014 },
+  { id: 36, titleEn: 'The Outsider', titleDe: 'The Outsider', year: 2018 },
+  { id: 37, titleEn: 'If It Bleeds', titleDe: 'If It Bleeds', year: 2020 },
+  { id: 38, titleEn: 'The Institute', titleDe: 'The Institute', year: 2019 },
+  { id: 39, titleEn: 'Holly', titleDe: 'Holly', year: 2023 },
+  { id: 40, titleEn: 'The Life of Chuck', titleDe: 'The Life of Chuck', year: 2024 },
+];
+
+const novellas = [
+  { id: 101, titleEn: 'The Body', titleDe: 'The Body', year: 1982 },
+  { id: 102, titleEn: 'The Shawshank Redemption', titleDe: 'The Shawshank Redemption', year: 1982 },
+  { id: 103, titleEn: 'The Apt Pupil', titleDe: 'The Apt Pupil', year: 1982 },
+  { id: 104, titleEn: 'The Breathing Method', titleDe: 'The Breathing Method', year: 1982 },
+];
+
+const collections = [
+  { id: 201, titleEn: 'Night Shift', titleDe: 'Night Shift', year: 1978 },
+  { id: 202, titleEn: 'Different Seasons', titleDe: 'Different Seasons', year: 1982 },
+  { id: 203, titleEn: 'Skeleton Crew', titleDe: 'Skeleton Crew', year: 1985 },
+  { id: 204, titleEn: 'Everything\'s Eventual', titleDe: 'Everything\'s Eventual', year: 2002 },
+];
+
+const allWorks = [...books, ...novellas, ...collections].sort((a, b) => a.year - b.year);
