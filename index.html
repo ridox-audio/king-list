@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen King Bibliothek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Stephen King Bibliothek</h1>
+            <p class="subtitle">Alle verӧffentlichten Werke des Meisters des Horrors</p>
+            
+            <div class="controls">
+                <div class="sort-controls">
+                    <button id="sortByYear" class="btn btn-active">Nach Jahr</button>
+                    <button id="sortByTitle" class="btn">Nach Titel</button>
+                </div>
+                
+                <div class="filter-controls">
+                    <input type="text" id="searchInput" placeholder="Suche nach Titel oder Autor..." class="search-box">
+                </div>
+                
+                <div class="hash-controls">
+                    <div class="hash-section">
+                        <button id="generateHash" class="btn btn-primary">Hash generieren</button>
+                        <input type="text" id="hashInput" placeholder="Hash hier einfügen..." class="hash-input">
+                        <button id="loadHash" class="btn btn-primary">Hash laden</button>
+                    </div>
+                    <div id="hashOutput" class="hash-output"></div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div id="booksList" class="books-grid"></div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Stephen King Bibliothek | Alle Werke chronologisch geordnet</p>
+        </footer>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
